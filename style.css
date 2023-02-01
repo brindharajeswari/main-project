@@ -5,6 +5,7 @@
     background-color: grey;
     border: 2px solid black;
     font-size: 50px;
+    align-items: center;
 
 }
 
@@ -21,11 +22,6 @@
 
 }
 
-#gameContainer {
-
-    text-align: center;
-}
-
 body {
-    background-color: aqua;
+    background-color: pink
 }
