@@ -1,0 +1,31 @@
+
+.cell {
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    border: 2px solid black;
+    font-size: 50px;
+
+}
+
+.gridContainer {
+    
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;            
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+
+}
+
+#gameContainer {
+
+    text-align: center;
+}
+
+body {
+    background-color: aqua;
+}
