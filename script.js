@@ -8,8 +8,8 @@
 const cells = document.querySelectorAll(".cell");
 const statusCheck = document.querySelector("#statusCheck");
 const restartButton = document.querySelector("#restartButton");
-
-
+// let X = "<img src='../images/x.gif'>";
+// let O = "<img src= '../images/o.gif'>";
 const winCondition = [ 
     [0,1,2],
     [3,4,5],
@@ -50,7 +50,7 @@ function cellClicked() {
         return;
     }
 
-    updateCell(this, cellId);          //id
+    updateCell(this, cellId);          
     //changePlayer();
     checkWinner();
 
@@ -73,7 +73,7 @@ function checkWinner() {
 
     let roundWon = false;
 
-    for(let i=0; i < winCondition.length; i++){
+    for(let i=0; i<winCondition.length; i++){
         const condition = winCondition[i];
         const cellA = options[condition[0]];
         const cellB = options[condition[1]];
@@ -105,7 +105,7 @@ function checkWinner() {
 
 function restartGame(){
 
-    currentPlayer = "x";
+    currentPlayer = "X";
     options = ["", "", "", "", "", "", "", "", ""];
     statusCheck.textContent = `${currentPlayer}'s turn`;
     cells.forEach(cell => cell.textContent = "");
