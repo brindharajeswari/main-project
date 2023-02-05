@@ -8,8 +8,8 @@
 const cells = document.querySelectorAll(".cell");
 const statusCheck = document.querySelector("#statusCheck");
 const restartButton = document.querySelector("#restartButton");
-// let X = "<img src='../images/x.gif'>";
-// let O = "<img src= '../images/o.gif'>";
+const X = "../images/x.gif";
+const O = "../images/o.gif";
 const winCondition = [ 
     [0,1,2],
     [3,4,5],
@@ -58,7 +58,13 @@ function cellClicked() {
 
 function updateCell(cell, id) {
     options[id] = currentPlayer;
-    cell.textContent = currentPlayer;
+    const img = new Image(145, 145); // width, height
+    if(currentPlayer == 'X'){
+        img.src = X + '?v=' + Date.now();
+    } else {
+        img.src = O + '?v=' + Date.now();
+    }
+    cell.appendChild(img);
 
 }
 
@@ -90,7 +96,13 @@ function checkWinner() {
     }
 
     if(roundWon){
-        statusCheck.textContent = `${currentPlayer} won!!`
+        let winningText = ' wins!!'
+        if(currentPlayer == 'X'){
+            winningText = 'Player1' + winningText;
+        } else {
+            winningText = 'Player2' + winningText;
+        }
+        statusCheck.textContent = winningText;
         running = false;
     }
 
