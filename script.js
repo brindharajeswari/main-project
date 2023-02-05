@@ -58,7 +58,7 @@ function cellClicked() {
 
 function updateCell(cell, id) {
     options[id] = currentPlayer;
-    const img = new Image(145, 145); // width, height
+    const img = new Image(145, 145);      // width, height
     if(currentPlayer == 'X'){
         img.src = X + '?v=' + Date.now();
     } else {
