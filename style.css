@@ -49,7 +49,7 @@ button{
     padding: 10px;
     margin: auto;
     position: relative;
-    top: 360px;
+    top: 390px;
     left: 550px;
     color:white;
     background-color: #ff4757;
@@ -69,7 +69,7 @@ button{
 
     display:flex;
     justify-content: center;
-    top : 350px;
+    top : 365px;
     
 
     -webkit-text-stroke: #ff4757; 

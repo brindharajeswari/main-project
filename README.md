@@ -87,3 +87,6 @@ change players (x,o) - take turns
 check winner (won/lost/draw)
 restart - play again
 
+
+git repo link : https://github.com/brindharajeswari/main-project
+link to the game : https://brindharajeswari.github.io/main-project/
