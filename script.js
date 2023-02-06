@@ -8,8 +8,8 @@
 const cells = document.querySelectorAll(".cell");
 const statusCheck = document.querySelector("#statusCheck");
 const restartButton = document.querySelector("#restartButton");
-const X = "../images/x.gif";
-const O = "../images/o.gif";
+const X = "images/x.gif";
+const O = "images/o.gif";
 const winCondition = [ 
     [0,1,2],
     [3,4,5],
