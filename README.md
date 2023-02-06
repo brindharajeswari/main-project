@@ -14,7 +14,7 @@ game over
 HTML
 *****
 
-linking java script and style.css
+link - java script and style.css
 h1 - game name (Tic tac toe)
 make 3*3 grid
  -div class grid container

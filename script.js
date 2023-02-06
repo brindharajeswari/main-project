@@ -51,7 +51,6 @@ function cellClicked() {
     }
 
     updateCell(this, cellId);          
-    //changePlayer();
     checkWinner();
 
 }
