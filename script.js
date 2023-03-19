@@ -1,8 +1,8 @@
 // variables for players (x and 0)
-// add event listener - player clicks on cells(for each cell), restbtn, status)
+// add event listener - player clicks on cells(for each cell), status)
 // func - to check status (win or lose or draw)
 // for loop - win condition [] - flow of the game 
-// functionalities - restart game, to display winner, to track score
+
 
 
 const cells = document.querySelectorAll(".cell");
@@ -57,9 +57,9 @@ function cellClicked() {
 
 function updateCell(cell, id) {
     options[id] = currentPlayer;
-    const img = new Image(145, 145);      // width, height
+    const img = new Image(145, 145);      // width, height - css
     if(currentPlayer == 'X'){
-        img.src = X + '?v=' + Date.now();
+        img.src = X + '?v=' + Date.now();   //time stamp- to load gif img in all cells
     } else {
         img.src = O + '?v=' + Date.now();
     }

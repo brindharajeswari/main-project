@@ -49,8 +49,9 @@ button{
     padding: 10px;
     margin: auto;
     position: relative;
+    display: block;
     top: 390px;
-    left: 550px;
+    left: 0px;
     color:white;
     background-color: #ff4757;
     border: none;

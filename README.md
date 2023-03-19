@@ -16,7 +16,7 @@ HTML
 
 link - java script and style.css
 h1 - game name (Tic tac toe)
-make 3*3 grid
+create 3*3 grid
  -div class grid container
  -create 9 cells with cellid
 check status of game
@@ -32,7 +32,7 @@ Java script
 ***********
 
 1) variables for players (x and 0) - let  current player is x
-2) add event listener - player clicks on each square(for each), restart button, statuscheck
+2) add event listener - player clicks on each square(for each),statuscheck
 3) function()  //to check status (win or lose or draw)
    *initializing game
    *clicking cell
