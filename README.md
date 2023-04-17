@@ -44,13 +44,13 @@ The game logic is implemented in pure JavaScript, while the visual effects are a
 ![js](/images/html-css-javascript-png.png)
 
 # About the Author
-This game was created by Brindha Rajeswari, a web developer and JavaScript enthusiast. 
-Feel free to contact me at brindharajeswari@gmail.com if you have any feedback or questions about the game. 
-Enjoy playing!
+- This game was created by Brindha Rajeswari, a web developer and JavaScript enthusiast. 
+- Feel free to contact me at brindharajeswari@gmail.com if you have any feedback or questions about the game. 
+- Enjoy playing!
 
 -----------------------------------------------
 
-git repo link : https://github.com/brindharajeswari/main-project
-Live site : https://brindharajeswari.github.io/main-project/
+- git repo link : https://github.com/brindharajeswari/main-project
+- Live site : https://brindharajeswari.github.io/main-project/
 
 -----------------------------------------------
