@@ -1,92 +1,56 @@
+# JavaScript TIC TAC TOE
+![ttt](/images/tic.png)
 
-game plan
-*********
+Live Site - https://brindharajeswari.github.io/main-project/
 
-3*3 grid
-start game (player1 nd 2)
-take turns(x and o)
-win condition - 3 (rows/columns/diagonal) - for loop
-declare result (win/lost/draw)
-game over
+# Introduction
+This is a simple web-based implementation of the classic game of Tic-Tac-Toe, also known as Noughts and Crosses. The game is designed to be played by two players, taking turns to mark their symbol (X or O) on a 3x3 grid until one of them wins or the game ends in a draw.
+![x](/images/x.gif)
+![o](/images/O.gif)
 
------------------------------------------------------------
+# How to play
+The game can be played by two players, one using X and the other using O. The players take turns placing their mark on the game board, trying to get three in a row horizontally, vertically, or diagonally.
 
-HTML
-*****
+The game can be started by opening the index.html file in your web browser. Click on any empty cell to place your mark. The game will automatically alternate between the X and O players. If a player gets three in a row, the game will announce the winner. If all cells are filled and there is no winner, the game will end in a draw.
 
-link - java script and style.css
-h1 - game name (Tic tac toe)
-create 3*3 grid
- -div class grid container
- -create 9 cells with cellid
-check status of game
- -X's or O's turn
- -player1 or player2 wins!
- -game draw
-Restart button
- -restart the game 
+To play again, click the "Restart" button.
 
--------------------------------------------------------------
+----------------------------------
+player1 wins!!!
+![ttt](/images/ttt.png)
 
-Java script
-***********
+--------------------------------
+player2 wins!!!
+![player](/images/player2.png)
 
-1) variables for players (x and 0) - let  current player is x
-2) add event listener - player clicks on each square(for each),statuscheck
-3) function()  //to check status (win or lose or draw)
-   *initializing game
-   *clicking cell
-   *updating cell
-   *changing player
-   *checking winner
-   *retarting game
-4) loop {} - flow of the game
-   *for loop - for wincondition
-functionalities - restart game, to display winner, to track score
+----------------------------------
+Game Draw
+1[draw](/images/draw.png)
 
------------------------------------------------------------------
+-------------------------------------
+# Features
+- Simple and intuitive user interface.
+- Responsive design that adapts to different screen sizes and devices.
+- Animated X and O symbols that make the game more visually appealing.
+- Clear messages that inform the players about the game status and whose turn it is.
+- Robust logic that prevents illegal moves and detects when a game is won or drawn.
+- Easy-to-use "Restart" button that allows the players to start a new game at any time.
 
-CSS
-****
+# Technologies Used
+This Tic-Tac-Toe game was built using HTML, CSS, and JavaScript, with no external libraries or frameworks. The game logic is implemented in pure JavaScript, while the visual effects are achieved with CSS animations and the HTML5 Image element.
+![js](/images/html-css-javascript-png.png)
 
-cell - 9 cells
- -display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-grid container
- -position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-  justify-content: center;  
-body
-h1
-button
- -border radius:25px
-statusCheck
- - display:flex;
-   justify-content: center;
-   top : 15px;
-   left :160px;
+# About the Author
+This game was created by Brindha Rajeswari, a web developer and JavaScript enthusiast. 
+![ud](/images/ud.png)
 
-   -webkit-text-stroke: #ff4757; 
-    animation: blinker 2s step-start infinite     //blink effect
 
-@keyframes blinker {
-    50%{
-        opacity: 0;
-    }   
+Feel free to contact me at brindharajeswari@gmail.com if you have any feedback or questions about the game. 
+Enjoy playing!
 
------------------------------------------------------------
-
-initializing the Game - init()
-clicking cells[0-8]
-updating cell[0-8]
-change players (x,o) - take turns
-check winner (won/lost/draw)
-restart - play again
-
+-----------------------------------------------
 
 git repo link : https://github.com/brindharajeswari/main-project
-link to the game : https://brindharajeswari.github.io/main-project/
+Live site : https://brindharajeswari.github.io/main-project/
+
+-----------------------------------------------

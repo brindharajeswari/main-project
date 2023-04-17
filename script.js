@@ -10,15 +10,15 @@ const statusCheck = document.querySelector("#statusCheck");
 const restartButton = document.querySelector("#restartButton");
 const X = "images/x.gif";
 const O = "images/o.gif";
-const winCondition = [ 
-    [0,1,2],
-    [3,4,5],
-    [6,7,8],
-    [0,3,6],
-    [1,4,7],
-    [2,5,8],
-    [0,4,8],
-    [2,4,6]
+const winCondition = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
 ];
 
 
@@ -46,11 +46,11 @@ function initGame() {
 
 function cellClicked() {
     const cellId = this.getAttribute("cellId")
-    if(options[cellId]!= "" || !running) {
+    if (options[cellId] != "" || !running) {
         return;
     }
 
-    updateCell(this, cellId);          
+    updateCell(this, cellId);
     checkWinner();
 
 }
@@ -58,7 +58,7 @@ function cellClicked() {
 function updateCell(cell, id) {
     options[id] = currentPlayer;
     const img = new Image(145, 145);      // width, height - css
-    if(currentPlayer == 'X'){
+    if (currentPlayer == 'X') {
         img.src = X + '?v=' + Date.now();   //time stamp- to load gif img in all cells
     } else {
         img.src = O + '?v=' + Date.now();
@@ -67,9 +67,9 @@ function updateCell(cell, id) {
 
 }
 
-function changePlayer(){
+function changePlayer() {
 
-    currentPlayer = (currentPlayer =="X") ? "O": "X";
+    currentPlayer = (currentPlayer == "X") ? "O" : "X";
     statusCheck.textContent = `${currentPlayer}'s turn`;
 
 }
@@ -78,25 +78,25 @@ function checkWinner() {
 
     let roundWon = false;
 
-    for(let i=0; i<winCondition.length; i++){
+    for (let i = 0; i < winCondition.length; i++) {
         const condition = winCondition[i];
         const cellA = options[condition[0]];
         const cellB = options[condition[1]];
         const cellC = options[condition[2]];
 
-        if(cellA == "" || cellB == "" || cellC == ""){
+        if (cellA == "" || cellB == "" || cellC == "") {
             continue;
         }
 
-        if(cellA==cellB && cellB==cellC){
+        if (cellA == cellB && cellB == cellC) {
             roundWon = true;
             break;
-        } 
+        }
     }
 
-    if(roundWon){
-        let winningText = ' wins!!'
-        if(currentPlayer == 'X'){
+    if (roundWon) {
+        let winningText = ' wins!!!'
+        if (currentPlayer == 'X') {
             winningText = 'Player1' + winningText;
         } else {
             winningText = 'Player2' + winningText;
@@ -105,7 +105,7 @@ function checkWinner() {
         running = false;
     }
 
-    else if(!options.includes("")) {
+    else if (!options.includes("")) {
         statusCheck.textContent = `Game Draw`;
         running = false;
     }
@@ -114,7 +114,7 @@ function checkWinner() {
     }
 }
 
-function restartGame(){
+function restartGame() {
 
     currentPlayer = "X";
     options = ["", "", "", "", "", "", "", "", ""];
