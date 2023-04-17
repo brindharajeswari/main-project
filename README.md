@@ -15,15 +15,18 @@ The game can be started by opening the index.html file in your web browser. Clic
 To play again, click the "Restart" button.
 
 ----------------------------------
-player1 wins!!!
+Player1 wins!!!
+
 ![ttt](/images/ttt.png)
 
 --------------------------------
-player2 wins!!!
+Player2 wins!!!
+
 ![player](/images/player2.png)
 
 ----------------------------------
 Game Draw
+
 ![draw](/images/draw.png)
 
 -------------------------------------
@@ -42,7 +45,6 @@ The game logic is implemented in pure JavaScript, while the visual effects are a
 
 # About the Author
 This game was created by Brindha Rajeswari, a web developer and JavaScript enthusiast. 
-![ud](/images/ud.png)
 Feel free to contact me at brindharajeswari@gmail.com if you have any feedback or questions about the game. 
 Enjoy playing!
 
