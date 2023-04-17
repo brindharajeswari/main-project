@@ -4,9 +4,8 @@
 Live Site - https://brindharajeswari.github.io/main-project/
 
 # Introduction
-This is a simple web-based implementation of the classic game of Tic-Tac-Toe, also known as Noughts and Crosses. The game is designed to be played by two players, taking turns to mark their symbol (X or O) on a 3x3 grid until one of them wins or the game ends in a draw.
-![x](/images/x.gif)
-![o](/images/O.gif)
+This is a simple web-based implementation of the classic game of Tic-Tac-Toe, also known as Noughts and Crosses. 
+The game is designed to be played by two players, taking turns to mark their symbol (X or O) on a 3x3 grid until one of them wins or the game ends in a draw.
 
 # How to play
 The game can be played by two players, one using X and the other using O. The players take turns placing their mark on the game board, trying to get three in a row horizontally, vertically, or diagonally.
@@ -25,7 +24,7 @@ player2 wins!!!
 
 ----------------------------------
 Game Draw
-1[draw](/images/draw.png)
+![draw](/images/draw.png)
 
 -------------------------------------
 # Features
@@ -37,14 +36,13 @@ Game Draw
 - Easy-to-use "Restart" button that allows the players to start a new game at any time.
 
 # Technologies Used
-This Tic-Tac-Toe game was built using HTML, CSS, and JavaScript, with no external libraries or frameworks. The game logic is implemented in pure JavaScript, while the visual effects are achieved with CSS animations and the HTML5 Image element.
+This Tic-Tac-Toe game was built using HTML, CSS, and JavaScript, with no external libraries or frameworks. 
+The game logic is implemented in pure JavaScript, while the visual effects are achieved with CSS animations and the HTML5 Image element.
 ![js](/images/html-css-javascript-png.png)
 
 # About the Author
 This game was created by Brindha Rajeswari, a web developer and JavaScript enthusiast. 
 ![ud](/images/ud.png)
-
-
 Feel free to contact me at brindharajeswari@gmail.com if you have any feedback or questions about the game. 
 Enjoy playing!
 
